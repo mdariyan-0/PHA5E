@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "Area" ;
+    src: url(./assets/fonnts.com-Area_Normal_Regular.otf);
+}
+@font-face {
+    font-family: "Druk" ;
+    src: url(./assets/DrukWideBold.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: 120vh;
+    margin:0;
+    padding: 0;
+    background-color: #212121;
+    color: white;
+}
+.navbar{
+    display: flex;
+    padding: 29px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Area";
+    font-weight: 500;
+    max-height: 70px;
+    /* width: 100%; */
+    max-width: 100%;
+    transition: 0.2s all ease;
+    position: sticky;
+    top: 0;
+    background-color: #212121;
+    z-index: 10;
+}
+.flex{
+    display: flex;
+}
+.nav-right{
+    align-items: center;
+    gap: 60px;
+    height: 20px;
+}
+.logo{
+    height: 18.5px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+ul{
+    gap: 60px;
+    position: relative;
+    right: -80px;
+}
+ul> li{
+    list-style-type: none;
+    cursor: pointer;
+}
+.underline{
+    width: 21px;
+    height: 2px;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    right: -108px;
+    top: 12px;
+    transition: 0.3s all ease;
+}
+.lang{
+    cursor: pointer;
+}
+.main-top{
+    width: 1414px;
+    margin-inline: auto;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.diagonal-line {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 118%;
+    height: 1px;
+    background-color: #ffffff67; 
+    transform-origin: 0 0;
+    transform: rotate(32deg);
+}
+.diagonal-line2 {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 118%;
+    height: 1px;
+    background-color: #ffffff67; 
+    transform-origin: 0 0;
+    transform: rotate(328deg); 
+}
+.center{
+    z-index: 3;
+    pointer-events: none !important;
+
+}
+.afterContent{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 130px;
+    left:165px;
+    display: none;
+    pointer-events: none;
+}
+.afterContent > h2{
+    font-family: "Druk" ;
+    width: 450px;
+    font-size: 2.7rem;
+    line-height: 50px;
+}
+.afterContent > p{
+    font-family: "Area";
+    font-weight: 600;
+    font-size: 0.8rem;
+    transform: translateY(-30px);
+}
+.center> h1{
+    font-family: "Druk";
+    font-size: 100px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0.2s all ease;
+}
+.floating-images > img{
+    height: 210px;
+   width: inherit;
+   z-index: 2;
+   cursor: pointer;
+}
+.floating-images:hover ~ .center> h1{
+    color: transparent; 
+    -webkit-text-stroke: 1px #ffffff42;
+}
+.floating-images{
+    width: 336px;
+    height: 210px;
+    position: absolute;
+    transition: 0.3s all ease
+}
+.dG{
+    display: none;
+}
+.imgA{
+    top: 228px;
+    left: 166px;
+}
+.imgB{
+    top: 128px;
+    left: 858px;
+}
+.imgC{
+    top: 560px;
+    left: 236px;
+}
+.imgD{
+    top: 412px;
+    left: 945px;
+}
+.video-section{
+    width: 1414px;
+    margin-inline: auto;
+    justify-content: center;
+    margin-top: 16rem;
+    margin-bottom: 4rem;
+}
+.container{
+    width: 1414px;
+    margin-inline: auto;
+}
+.video-player{
+    width: inherit;
+    height: 800px;
+}
+.feature-section{
+    justify-content: space-between;
+    font-family: "Area";
+    align-items: center;
+    height: 610px;
+    max-height: 610px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.word-left{
+    justify-self: flex-start;
+}
+.word-left > p{
+    transform: rotate(270deg);
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+}
+.word-right > p{
+    transform: rotate(90deg);
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+}
+.image-area > h3{
+    font-family: "Druk";
+}
+.image-area{
+    width: 460px;
+    flex-direction: column;
+    gap: 0;
+}
+.see-more{
+    flex-direction: column;
+    gap: 10px;
+    width: 460px;
+}
+.see-more1{
+    transform: translateY(-100px) !important;
+}
+.see-more > p{
+    font-size: 0.95rem;
+    line-height: 24px;
+}
+.see-more > .more-button > p{
+    letter-spacing: 7px;
+    font-size: 0.7rem;
+    display: inline-block;
+    margin-left: 16px;
+}
+.image-area > h3 {
+    font-size: 2.3rem;
+    line-height: 47px;
+    z-index: 2;
+}
+.image-area1{
+    transform: translateX(80px);
+}
+.image-area > img{
+    width: 225px;
+    align-self:flex-end;
+    transform: translateY(60px);
+    position: absolute;
+}
+.img2{
+    transform: translateY(-60px);
+}
+.see-more2> p{
+    padding-inline: 5px;
+}
+.see-more2{
+    transform: translateX(50px);
+}
+.image-area2{
+    transform: translateY(90px);
+}
+.image-area2 > img{
+    width: 300px;
+    transform: translateX(80px);
+}
+.image-area2 > h3{
+    padding-inline: 20px;
+}
+.middle-last{
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18rem;
+    font-family: "Area";
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+.award-title{
+    letter-spacing: 5px;
+}
+.award-img> img{
+    width: 150px;
+}
+.award-img{
+    gap: 50px;
+}
+.award-desc{
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.award-desc > p{
+    margin: 0;
+}
