@@ -101,16 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// var scrollAnimation = gsap.timeline({
-//     scrollTrigger:{
-//         trigger: ".transformImg",
-//         start: "bottom top",
-//         end: "top bottom",
-//         toggleActions: "restart none none none"
-//     }
-// })
-
-
 
 gsap.to(".img1", {
   scrollTrigger: {
